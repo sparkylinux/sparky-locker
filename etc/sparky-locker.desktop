@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Icon=system-lock-screen
+Name=Sparky Locker
+Categories=Applications;Utility;Core;GTK;
+Exec=sparky-locker
+StartupNotify=true
+Terminal=false

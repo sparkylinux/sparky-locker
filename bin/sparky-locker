@@ -1,0 +1,18 @@
+#!/bin/bash
+# Created by Paweł "pavroo" Pijanowski 2023/07/08
+# Copyright 2023 under the GNU GPL2 License
+# Last update 2023/07/08
+
+. $HOME/.sparky-locker
+
+if [ "$LOCKERTIME" != "" ]; then
+	LOCKERTIME="$LOCKERTIME"
+else
+	LOCKERTIME="10"
+fi
+
+# this command activates screenlock after X minutes of inactivity
+xautolock -time "$LOCKERTIME" -locker 'i3lock-fancy -g -p' &
+# this command activates screenlock when system resumes from sleep/hibernation
+xss-lock -- i3lock-fancy -g -p &
+exit 0
