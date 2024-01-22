@@ -1,8 +1,11 @@
 [Desktop Entry]
 Type=Application
 Icon=system-lock-screen
-Name=Sparky Locker
+Name=Desktop Locker
+Name[pl]=Zebezpiecz Pulpit
+Comment=Lock Your Desktop
+Comment[pl]=Zabezpiecz Pulpit
 Categories=Applications;Utility;Core;GTK;
-#Exec=sparky-locker
+Exec=i3lock-fancy -g -p
 StartupNotify=true
 Terminal=false

@@ -18,6 +18,7 @@ if [ "$1" = "uninstall" ]; then
 	rm -r /etc/xdg/autostart/sparky-locker.desktop
 	rm -rf /etc/sparky-locker
 	rm -f /usr/bin/sparky-locker
+	rm -f /usr/share/applications/sparky-locker.desktop
 else
 	cp etc/sparky-locker.desktop /etc/xdg/autostart/
 	if [ ! -d /etc/sparky-locker ]; then
@@ -25,4 +26,5 @@ else
 	fi
 	cp etc/sparky-locker-sample.conf $HOME/.sparky-locker
 	cp bin/* /usr/bin/
+	cp applications/* /usr/share/applications/
 fi
